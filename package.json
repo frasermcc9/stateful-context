@@ -1,6 +1,6 @@
 {
   "name": "@frasermcc/stateful-context",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helper for reducing the boilerplate required when combining react state and context",
   "main": "build/index.js",
   "scripts": {
@@ -16,5 +16,9 @@
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frasermcc9/stateful-context.git"
   }
 }
