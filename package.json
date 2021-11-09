@@ -20,5 +20,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/frasermcc9/stateful-context.git"
-  }
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "typescript"
+  ]
 }
