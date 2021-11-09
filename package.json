@@ -1,0 +1,20 @@
+{
+  "name": "@frasermcc/stateful-context",
+  "version": "1.0.1",
+  "description": "Helper for reducing the boilerplate required when combining react state and context",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rimraf build && tsc"
+  },
+  "author": "Fraser McCallum",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "optionalDependencies": {
+    "@types/react": "^17.0.34"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
