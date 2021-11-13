@@ -27,9 +27,6 @@ import { TestContextProvider } from "./useTest"
 import { Consumer } from "./Consumer"
 
 export const App: React.FC = () => {
-  const [name, setName] = useTest.name;
-  const [id, setId] = useTest.id;
-
   return (
     <TestContextProvider>
       <Consumer />
