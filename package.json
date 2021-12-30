@@ -1,6 +1,6 @@
 {
   "name": "@frasermcc/stateful-context",
-  "version": "1.0.3",
+  "version": "2.0.1",
   "description": "Helper for reducing the boilerplate required when combining react state and context",
   "main": "build/index.js",
   "scripts": {
