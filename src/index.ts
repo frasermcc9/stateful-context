@@ -1,2 +1,3 @@
 import { createStatefulContext } from "./createStatefulContext";
-export { createStatefulContext };
+import { createStatefulContext as nextStatefulContext } from "./createStatefulContext.next";
+export { createStatefulContext, nextStatefulContext };
