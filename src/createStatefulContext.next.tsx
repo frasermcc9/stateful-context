@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 
 type ChildFreeProps<T> = Omit<T, "children">;
 
@@ -16,12 +16,11 @@ export function createStatefulContext<T extends {}>(defaults: ChildFreeProps<T>)
             ...rest,
         });
 
-        const setStateWrapper = (
-            updater: (old: ChildFreeProps<T>) => Partial<ChildFreeProps<T>>
-        ) => {
-            const newState = updater(state);
-            setState((old) => ({ ...old, ...newState }));
-        };
+        const setStateWrapper = useCallback(
+            (updater: (old: ChildFreeProps<T>) => Partial<ChildFreeProps<T>>) =>
+                setState((old) => ({ ...old, ...updater(old) })),
+            []
+        );
 
         return <Context.Provider value={[state, setStateWrapper]}>{children}</Context.Provider>;
     };
